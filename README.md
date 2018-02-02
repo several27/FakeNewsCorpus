@@ -2,22 +2,23 @@
 
 # Fake News Corpus
 
-This is an open source dataset of millions of news articles scraped from a curated list of 1001 domains from http://www.opensources.co/. Corpus is mainly intended for use in training deep learning algorithms for purpose of fake news recognition. The dataset is still work in progress and for now, the public version includes only around a million of articles (out of predicted at least 10 million) from 422 domains (out of 1001). 
+This is an open source dataset composed of millions of news articles scraped from a curated list of 1001 domains from http://www.opensources.co/. Corpus is mainly intended for use in training deep learning algorithms for purpose of fake news recognition. The dataset is still work in progress and for now, the public version includes only around a million of articles (out of predicted at least 10 million) from 422 domains (out of 1001). 
 
-## How to download? 
+## Downloading 
 
-The dataset is currently hosted on a public S3 bucket.
+The dataset is currently hosted on a public S3 bucket and is about 1.1GB in size. 
 
     s3://researchably-fake-news-recognition/public_corpus/news_cleaned_2018_01_29.csv.zip
 
 To download it simple run the following command with installed [awscli](https://github.com/aws/aws-cli) and configured with a (free) AWS account.
 
     aws s3 cp s3://researchably-fake-news-recognition/public_corpus/news_cleaned_2018_01_29.csv.zip news_corpus.csv
+
 ## How was the corpus created?
 
 The corpus was simply created by scraping (using [scrapy](https://github.com/scrapy/scrapy)) all the domains as provided by http://www.opensources.co/. Then all the pure HTML content was processed and the content and the fields below were extracted using a great [newspaper](https://github.com/codelucas/newspaper) library. Each article has been attributed the same label as the label associated with its domain. All the source code is available at [FakeNewsRecognition](https://github.com/several27/FakeNewsRecognition) and will be made more “usable” in the next few months. 
 
-## Format
+## Formatting
 
 The corpus is formatted as a CSV and contains the following fields: 
 
@@ -60,11 +61,15 @@ You can find the full list of domains in `websites.csv`.
 
 ## Limitations
 
-The dataset was not manually filtered, therefore some of the labels might not be appropriate and some of the URLs might not point to the actual articles but other pages on the website. However, because the corpus is intended for use in training machine learning algorithms, those problems should not pose a practical issue.  
-Currently the public version of the dataset struggles with the problem of unbalanced classes, especially `reliable` vs rest. That problem will be soon addressed by including additional sources from reliable public API’s. 
+The dataset was not fully manually filtered, therefore some of the labels might not be correct and some of the URLs might not point to the actual articles but other pages on the website. However, because the corpus is intended for use in training machine learning algorithms, those problems should not pose a practical issue.  
+
+Currently the public version of the dataset has highly unbalanced classes, especially `reliable` (only 7k) vs rest (~ 1mln). That problem will be soon addressed by including additional sources from reliable public API’s. 
+
 Additionally, when the dataset will be finalised (as for now only about 5% was cleaned and published), I do not intend to update it, therefore it might quickly become outdated for other purposes than content-based algorithms. However, any contributions are welcome!
 
-## Contributions
+## Contributing
 
-Because there’s currently only one person working on this corpus, I’d really appreciate all the contributions. If you have found wrong labels associated with any articles, wrong content or URLs that are not pointing to any articles, feel free to post an issue with the problem and exact article id and I will do my best to respond promptly. Because of the size of the corpus, I could not host it on GitHub, therefore, unfortunately, for now, pull requests cannot be used to collaborative work on the data, however, I’m open to any ideas 🙂 
+Because there’s currently only myself working on this corpus, I’d really appreciate all the contributions. If you have found wrong labels associated with any articles, weirdly formatted content or URLs that are not pointing to any articles, feel free to post an issue with the problem and exact article id and I will do my best to respond promptly. Because of the size of the corpus, I could not host it on GitHub, therefore, unfortunately, for now, pull requests cannot be used to collaborative work on the data, however, I’m open to any ideas 🙂 
 
+## Acknowledgments
+- [http://www.opensources.co/](http://www.opensources.co/)
