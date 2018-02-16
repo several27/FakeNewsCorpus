@@ -51,7 +51,7 @@ More information on http://www.opensources.co
 | **State News** | state | 0 | Sources in repressive states operating under government sanction. |
 | **Junk Science** | junks | 144,939 | Sources that promote pseudoscience, metaphysics, naturalistic fallacies, and other scientifically dubious claims. |
 | **Hate News** | hate | 117,374 | Sources that actively promote racism, misogyny, homophobia, and other forms of discrimination. |
-| **Clickbait** | clickbait | 292201 | Sources that provide generally credible content, but use exaggerated, misleading, or questionable headlines, social media descriptions, and/or images. |
+| **Clickbait** | clickbait | 292,201 | Sources that provide generally credible content, but use exaggerated, misleading, or questionable headlines, social media descriptions, and/or images. |
 | **Proceed With Caution** | unreliable | 319,830 | Sources that may be reliable but whose contents require further verification. |
 | **Political** | political | 2,435,471 | Sources that provide generally verifiable information in support of certain points of view or political orientations. |
 | **Credible** | reliable | 1,920,139 | Sources that circulate news and information in a manner consistent with traditional and ethical practices in journalism (Remember: even credible sources sometimes rely on clickbait-style headlines or occasionally make mistakes. No news organization is perfect, which is why a healthy news diet consists of multiple sources of information). |
