@@ -38,6 +38,7 @@ The corpus is formatted as a CSV and contains the following fields:
 - meta_description
 - tags
 - summary
+- source (opensources, nytimes, or webhose)
 
 **Available types**
 More information on http://www.opensources.co 
