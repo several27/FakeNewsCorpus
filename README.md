@@ -2,7 +2,7 @@
 
 # Fake News Corpus
 
-This is an open source dataset composed of millions of news articles mostly scraped from a curated list of 1001 domains from http://www.opensources.co/. Because the list does not contain many reliable websites, additionally [NYTimes](https://developer.nytimes.com/) and [WebHose English News Articles](https://webhose.io/datasets) articles has been included to better balance the classes. Corpus is mainly intended for use in training deep learning algorithms for purpose of fake news recognition. The dataset is still work in progress and for now, the public version includes only 9,408,908 articles (745 out 1001 domains).
+This is an open source dataset composed of millions of news articles mostly scraped from a curated list of 1001 domains from http://www.opensources.co/. Because the list does not contain many reliable websites, additionally [NYTimes](https://developer.nytimes.com/) and [WebHose English News Articles](https://webhose.io/datasets) articles has been included to better balance the classes. Corpus is mainly intended for use in training deep learning algorithms for purpose of fake news recognition. The dataset is still work in progress and for now, the public version includes only 9,408,908 articles (745 out of 1001 domains).
 
 ## Downloading 
 
