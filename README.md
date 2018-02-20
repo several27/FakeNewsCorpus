@@ -16,7 +16,7 @@ To download it simply run the following command with installed [awscli](https://
 
 ## How was the corpus created?
 
-The corpus was simply created by scraping (using [scrapy](https://github.com/scrapy/scrapy)) all the domains as provided by http://www.opensources.co/. Then all the pure HTML content was processed and the content and the fields below were extracted using a great [newspaper](https://github.com/codelucas/newspaper) library. Each article has been attributed the same label as the label associated with its domain. All the source code is available at [FakeNewsRecognition](https://github.com/several27/FakeNewsRecognition) and will be made more “usable” in the next few months. 
+The corpus was created by scraping (using [scrapy](https://github.com/scrapy/scrapy)) all the domains as provided by http://www.opensources.co/. Then all the pure HTML content was processed to extract the article text with some additional fields (listed below) using the [newspaper](https://github.com/codelucas/newspaper) library. Each article has been attributed the same label as the label associated with its domain. All the source code is available at [FakeNewsRecognition](https://github.com/several27/FakeNewsRecognition) and will be made more “usable” in the next few months. 
 
 ## Formatting
 
@@ -62,13 +62,13 @@ You can find the full list of domains in `websites.csv`.
 
 ## Limitations
 
-The dataset was not fully manually filtered, therefore some of the labels might not be correct and some of the URLs might not point to the actual articles but other pages on the website. However, because the corpus is intended for use in training machine learning algorithms, those problems should not pose a practical issue.  
+The dataset was not manually filtered, therefore some of the labels might not be correct and some of the URLs might not point to the actual articles but other pages on the website. However, because the corpus is intended for use in training machine learning algorithms, those problems should not pose a practical issue.  
 
-Additionally, when the dataset will be finalised (as for now only about 5% was cleaned and published), I do not intend to update it, therefore it might quickly become outdated for other purposes than content-based algorithms. However, any contributions are welcome!
+Additionally, when the dataset will be finalised (as for now only about 80% was cleaned and published), I do not intend to update it, therefore it might quickly become outdated for other purposes than content-based algorithms. However, any contributions are welcome!
 
 ## Contributing
 
-Because there’s currently only myself working on this corpus, I’d really appreciate all the contributions. If you have found wrong labels associated with any articles, weirdly formatted content or URLs that are not pointing to any articles, feel free to post an issue with the problem and exact article id and I will do my best to respond promptly. Because of the size of the corpus, I could not host it on GitHub, therefore, unfortunately, for now, pull requests cannot be used to collaborative work on the data, however, I’m open to any ideas 🙂 
+Because there’s currently only myself working on this corpus, I’d really appreciate all the contributions. If you have found wrong labels associated with any articles, weirdly formatted content or URLs that are not pointing to any articles, feel free to post an issue with the problem and exact article id and I will do my best to respond promptly. Because of the size of the corpus, I could not host it on GitHub, therefore, unfortunately, for now, pull requests cannot be used to collaboratively work on the data, however, I’m open to any ideas 🙂 
 
 ## Acknowledgments
 - [http://www.opensources.co/](http://www.opensources.co/)
