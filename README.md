@@ -10,7 +10,7 @@ The dataset is currently hosted on a public S3 bucket and is about 9.1GB in size
 
     s3://researchably-fake-news-recognition/public_corpus/news_cleaned_2018_02_13.csv.zip
 
-To download it simple run the following command with installed [awscli](https://github.com/aws/aws-cli) and configured with a (free) AWS account.
+To download it simply run the following command with installed [awscli](https://github.com/aws/aws-cli) and configured with a (free) AWS account.
 
     aws s3 cp s3://researchably-fake-news-recognition/public_corpus/news_cleaned_2018_02_13.csv.zip news_corpus.csv
 
