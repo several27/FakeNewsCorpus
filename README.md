@@ -6,13 +6,7 @@ This is an open source dataset composed of millions of news articles mostly scra
 
 ## Downloading 
 
-The dataset is currently hosted on a public GCP Storage bucket and is about 9.1GB in size. To download it just click on the link below: 
-
-    https://storage.googleapis.com/researchably-fake-news-recognition/news_cleaned_2018_02_13.csv.zip
-
-or simply run the following command with installed wget.
-
-    wget https://storage.googleapis.com/researchably-fake-news-recognition/news_cleaned_2018_02_13.csv.zip
+https://github.com/several27/FakeNewsCorpus/releases/tag/v1.0
 
 ## How was the corpus created?
 
